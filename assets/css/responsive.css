@@ -1,0 +1,127 @@
+/* Container component */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) { 
+    .container {
+        width: 100%
+    }
+    .flex-xs-column {
+        flex-direction: column;
+        gap: 2rem
+    }
+    .d-xs-none {
+        display: none !important
+    }
+    .pr-xs-1 {
+        padding-right: 10px
+    }
+    .pl-xs-1 {
+        padding-left: 10px
+    }
+    .pl-xs-3 {
+        padding-left: 3rem
+    }
+    .pr-xs-3 {
+        padding-right: 3rem
+    }
+    .font-size-xs-18 {
+        font-size: 18px
+    }
+    .logo a span {
+        opacity: 0;
+        pointer-events: none
+    }
+    section.third-section blockquote::before {
+        left: 0px
+    }
+    section.third-section blockquote::after {
+        right: 0px
+    }
+    section.third-section figcaption {
+        margin-right: 3rem
+    }
+    .mobile-icon-toggle {
+        display: block;
+        cursor: pointer
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 577px) and (max-width: 767px) { 
+    .container {
+        width: 540px
+    }
+    .flex-sm-column {
+        flex-direction: column;
+        gap: 2rem
+    }
+    .d-sm-none {
+        display: none !important
+    }
+    .pr-sm-1 {
+        padding-right: 10px
+    }
+    .pl-sm-1 {
+        padding-left: 10px
+    }
+    .pl-sm-3 {
+        padding-left: 3rem
+    }
+    .pr-sm-3 {
+        padding-right: 3rem
+    }
+    .font-size-sm-18 {
+        font-size: 18px
+    }
+    .font-size-sm-24 {
+        font-size: 24px
+    }
+    .font-size-sm-36 {
+        font-size: 36px
+    }
+    .font-size-sm-48 {
+        font-size: 48px
+    }
+    .mobile-icon-toggle {
+        display: block;
+        cursor: pointer
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .container {
+        width: 720px
+    }
+    .mobile-icon-toggle {
+        display: none;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .container {
+        width: 960px
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .container {
+        width: 1140px
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    .container {
+        width: 1320px
+    }
+}

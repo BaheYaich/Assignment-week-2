@@ -1,0 +1,10 @@
+/* Icons settings */
+.cart-icon, .user-icon, .book-icon, .podcast-icon {
+    height: 16px;
+}
+.cart-icon path, .user-icon path, .book-icon path, .podcast-icon path, .mobile-icon-toggle path {
+    fill: white;
+}
+.mobile-icon-toggle {
+    height: 20px;
+}

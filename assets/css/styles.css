@@ -1,0 +1,305 @@
+:root {
+    --font-primary : 'Roboto', sans-serif;
+    --color-primary : #1F2937;
+    --color-secondary : #F9FAF8;
+    --color-tertiary : #E5E7EB;
+    --color-cta-bg : #3882F6;
+    --font-size-base : 18px;
+    --line-height-base : 1.5
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'], 
+menu {
+  list-style: none
+}
+
+/* Core root defaults */
+html:focus-within {
+    scroll-behavior: smooth
+}
+
+/* Core body defaults */
+html, body {
+    font-size: var(--font-size-base)
+}
+body {
+    text-rendering: optimizeSpeed;
+    font-family: var(--font-primary);
+    line-height: var(--line-height-base)
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto
+}
+
+/* Image defaults */
+img, picture, svg {
+    max-width: 100%;
+    display: block
+}
+
+
+/* Custom rules */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1
+}
+header nav {
+    box-shadow: 0 0em 1em 0em black;
+}
+header nav .logo-img {
+    width: 50px
+}
+section {
+    position: relative;
+    z-index: 0
+}
+
+/* Menu component */
+menu {
+    gap: 1rem;
+}
+menu > li > a {
+    border-radius: 0.25rem;
+}
+menu a:hover, menu a.active, .dropdown:hover .dropdown-button {
+    background-color: var(--color-cta-bg)
+}
+
+/* Side internal navigational menu */
+.internal-side-nav {
+    top: 50vh;
+    right: 25px;
+    box-shadow: 0px 0px 5px 0px black
+}
+.internal-side-nav ul {
+    list-style: none
+}
+.internal-side-nav ul li a {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid black
+}
+.internal-side-nav ul li:last-child a {
+    border-bottom: none
+}
+.internal-side-nav ul li a svg  {
+    height: 20px
+}
+.internal-side-nav ul li a svg path {
+    fill: var(--color-primary)
+}
+
+
+/* Dropdown component */
+menu a {
+    font-size: 16px;
+    color: var(--color-secondary);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none
+} 
+.dropdown {
+    position: relative
+}
+.dropdown .dropdown-button {
+    color: var(--color-secondary);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
+} 
+.dropdown-content {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 60px;
+    background-color: var(--color-secondary);
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem
+} 
+.dropdown-content a {
+    color: var(--color-primary);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left
+}
+.dropdown-content a:hover {
+    background-color: var(--color-tertiary)
+}
+.dropdown:hover .dropdown-content {
+    display: block
+}
+.dropdown-content li.active a, .dropdown-content li.active:hover a {
+    background-color: var(--color-cta-bg);
+    color: var(--color-secondary);
+    font-weight: 600
+}
+
+/* CTA button component */
+section.first-section button.cta-button:hover {
+    color: var(--color-primary);
+    background-color: var(--color-secondary)
+}
+section.first-section button.cta-button:hover .cart-icon path {
+    fill: var(--color-primary)
+}
+
+/* Biblio-item component */
+section.second-section .biblio-container {
+    width: 50vw
+}
+section.second-section .biblio-container .biblio-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1
+}
+section.second-section .biblio-container .biblio-item figure {
+    width: 175px
+}
+section.second-section .biblio-container .biblio-item figure:hover img {
+    transform: scale(1.5)
+}
+section.second-section .biblio-container .biblio-item figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1);
+    transition: all ease-in-out 0.2s
+}
+section.second-section .biblio-container .biblio-item figure figcaption {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center
+}
+
+/* Quote component */
+section.third-section {
+    padding-top: 7rem;
+    padding-bottom: 7rem
+}
+section.third-section blockquote {
+    width: 70%;
+    margin: auto;
+    text-align: left
+}
+section.third-section blockquote::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    height: 50px;
+    width: 50px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><path d='M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64h-64c-35.3 0-64-28.7-64-64V216z'/></svg>");
+    background-repeat: no-repeat;
+    opacity: 0.5
+}
+section.third-section blockquote::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    right: -100px;
+    height: 50px;
+    width: 50px;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'><path d='M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8h-64c-35.3 0-64-28.7-64-64v-64c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v136zm-256 0c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64v-64c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v136z'/></svg>");
+    background-repeat: no-repeat;
+    opacity: 0.5
+}
+section.third-section blockquote::before, section.third-section blockquote::after {
+    transition: opacity ease-in-out 0.5s
+}
+section.third-section blockquote:hover::before, section.third-section blockquote:hover::after {
+    opacity: 1
+}
+section.third-section figcaption {
+    text-align: right;
+    margin-top: 5rem;
+    margin-right: 5rem
+}
+
+/* Sign-up call to action button */
+section.fourth-section .sign-up-btn {
+    border: 2px solid white;
+    padding-right: 2rem;
+    padding-left: 2rem
+}
+
+/* Grid layout for the library */
+#Grid-Layout .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem
+}
+#Grid-Layout .grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1);
+    transition: all ease-in-out 0.2s
+}
+#Grid-Layout .grid-item:hover img {
+    transform: scale(1.1);
+    filter: blur(20px)
+}
+#Grid-Layout .grid-item {
+    overflow: hidden;
+    position: relative
+}
+#Grid-Layout .grid-item .blurred-bg {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: all ease-in-out 0.2s
+}
+#Grid-Layout .grid-item:hover .blurred-bg {
+    padding: 1rem;
+    opacity: .75
+}
+#Grid-Layout .grid-item .blurred-bg p {
+    opacity: 0;
+    color: white;
+    text-align: center;
+    font-size: 36px
+}
+#Grid-Layout .grid-item:hover .blurred-bg p{
+    opacity: 1
+}
