@@ -41,7 +41,10 @@
     text-decoration: underline
 }
 .line-height-heading {
-    line-height: 1.1;
+    line-height: 1.1
+}
+.visibility-hidden {
+    visibility: hidden
 }
 
 /* Font sizes */

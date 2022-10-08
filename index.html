@@ -1,163 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Richard Feynman</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="preload" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/utilities.css">
-    <link rel="stylesheet" href="assets/css/icons.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-</head>
-<body>
-    <header>
-        <nav class="bg-primary pt-1 pb-1 pl-3 pr-3 pl-xs-1 pr-xs-1 pr-sm-1 pl-sm-1">
-          <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-              <div class="logo">
-                <a class="d-flex align-items-center justify-content-center color-primary text-decoration-none" href="#">
-                  <img class="logo-img" src="./assets/img/logo.png" alt="Logo: Atomic particle"><span class="font-size-24 font-size-xs-18 font-size-sm-18">Science Hub</span>
-                </a>
-              </div>
-              <menu class="d-flex align-items-center justify-content-center d-xs-none d-sm-none">
-                <li class="dropdown">
-                  <a class="dropdown-button text-decoration-none d-flex align-items-center justify-content-center active" href="#Biography">
-                    <svg class="user-icon mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d='M399 384.2c-22.1-38.4-63.6-64.2-111-64.2h-64c-47.4 0-88.9 25.8-111 64.2 35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM512 256c0 141.4-114.6 256-256 256S0 397.4 0 256 114.6 0 256 0s256 114.6 256 256zm-256 16c39.8 0 72-32.2 72-72s-32.2-72-72-72-72 32.2-72 72 32.2 72 72 72z'/></svg>
-                    <span>Science Grandpas</span>
-                  </a>
-                  <ul class="dropdown-content">
-                    <li class="active"><a class="" href="#Biography">Richard Feynman</a></li>
-                    <li class=""><a class="" href="static-html/carl-sagan.html">Carl Sagan</a></li>
-                  </ul>
-                </li>
-                <li class="">
-                  <a class="d-flex align-items-center justify-content-center" href="./static-html/library.html">
-                    <svg class="book-icon mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d='M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96zm0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z'/></svg>
-                    <span>Library</span>
-                  </a>
-                </li>
-                <!-- <li class="">
-                  <a class="d-flex align-items-center justify-content-center" href="#Podcast">
-                    <svg class="podcast-icon mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d='M319.4 372c48.5-31.3 80.6-85.9 80.6-148 0-97.2-78.8-176-176-176S48 126.8 48 224c0 62.1 32.1 116.6 80.6 148 1.2 17.3 4 38 7.2 57.1l.2 1C56 395.8 0 316.5 0 224 0 100.3 100.3 0 224 0s224 100.3 224 224c0 92.5-56 171.9-136 206.1l.2-1.1c3.1-19.2 6-39.8 7.2-57zm-2.3-38.1c-1.6-5.7-3.9-11.1-7-16.2-5.8-9.7-13.5-17-21.9-22.4 19.5-17.6 31.8-43 31.8-71.3 0-53-43-96-96-96s-96 43-96 96c0 28.3 12.3 53.8 31.8 71.3-8.4 5.4-16.1 12.7-21.9 22.4-3.1 5.1-5.4 10.5-7 16.2C99.8 307.5 80 268 80 224c0-79.5 64.5-144 144-144s144 64.5 144 144c0 44-19.8 83.5-50.9 109.9zM224 312c32.9 0 64 8.6 64 43.8 0 33-12.9 104.1-20.6 132.9-5.1 19-24.5 23.4-43.4 23.4s-38.2-4.4-43.4-23.4C172.8 460.2 160 389 160 355.9c0-35.1 31.1-43.8 64-43.8zm0-32c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z'/></svg>
-                    <span>Podcast</span>
-                  </a>
-                </li> -->
-              </menu>
-              <svg class="mobile-icon-toggle mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z"/></svg>
-            </div>
-          </div>
-        </nav>
-        <!--Side internal navigation menu-->
-        <div class="internal-side-nav position-absolute">
-          <ul>
-            <li>
-              <a href="#Biography">              
-                <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d='M399 384.2c-22.1-38.4-63.6-64.2-111-64.2h-64c-47.4 0-88.9 25.8-111 64.2 35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM512 256c0 141.4-114.6 256-256 256S0 397.4 0 256 114.6 0 256 0s256 114.6 256 256zm-256 16c39.8 0 72-32.2 72-72s-32.2-72-72-72-72 32.2-72 72 32.2 72 72 72z'/></svg>
-              </a>
-            </li>
-            <li>
-              <a href="#Library">
-                <svg class="book-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d='M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96zm0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z'/></svg>
-              </a>
-            </li>
-            <li>
-              <a href="#Quote">
-                <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484 512"><path d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z"/></svg>
-              </a>
-            </li>
-            <li>
-              <a href="#Podcast">
-                <svg class="podcast-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d='M319.4 372c48.5-31.3 80.6-85.9 80.6-148 0-97.2-78.8-176-176-176S48 126.8 48 224c0 62.1 32.1 116.6 80.6 148 1.2 17.3 4 38 7.2 57.1l.2 1C56 395.8 0 316.5 0 224 0 100.3 100.3 0 224 0s224 100.3 224 224c0 92.5-56 171.9-136 206.1l.2-1.1c3.1-19.2 6-39.8 7.2-57zm-2.3-38.1c-1.6-5.7-3.9-11.1-7-16.2-5.8-9.7-13.5-17-21.9-22.4 19.5-17.6 31.8-43 31.8-71.3 0-53-43-96-96-96s-96 43-96 96c0 28.3 12.3 53.8 31.8 71.3-8.4 5.4-16.1 12.7-21.9 22.4-3.1 5.1-5.4 10.5-7 16.2C99.8 307.5 80 268 80 224c0-79.5 64.5-144 144-144s144 64.5 144 144c0 44-19.8 83.5-50.9 109.9zM224 312c32.9 0 64 8.6 64 43.8 0 33-12.9 104.1-20.6 132.9-5.1 19-24.5 23.4-43.4 23.4s-38.2-4.4-43.4-23.4C172.8 460.2 160 389 160 355.9c0-35.1 31.1-43.8 64-43.8zm0-32c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z'/></svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-    </header>
 
-    <main>
-      <section id="Biography" class="first-section bg-primary pt-5 pb-5">
-        <div class="container">
-          <div class="d-flex align-items-center justify-content-between flex-xs-column flex-sm-column gap-1">
-            <div class="flex-1 color-primary">
-              <h1 class="mb-1 font-size-48 font-extra-bold line-height-heading">Professor Richard Feynman</h1>
-              <p class="mb-1 font-size-18">Richard Phillips Feynman was an American theoretical physicist, known for his work in the path integral formulation of quantum mechanics, the theory of quantum electrodynamics, the physics of the superfluidity of supercooled liquid helium, as well as his work in particle physics for which he proposed the parton model.</p>
-              <button class="button cta-button d-flex justify-content-center align-items-center" onclick="location.href='./static-html/library.html'">
-                <svg class="cart-icon mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24h52.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5h328c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zm152 512c26.5 0 48-21.5 48-48s-21.5-48-48-48-48 21.5-48 48 21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48 21.5 48 48 48 48-21.5 48-48z"/></svg>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Richard Feynman</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="assets/css/fonts.css" as="style">
+  <link rel="stylesheet" href="assets/css/icons.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="assets/css/utilities.css">
+</head>
+
+<body>
+  <header class="bg-primary d-flex align-items-center justify-content-between pt-1 pb-1">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="#" class="d-flex align-items-center justify-content-center text-decoration-none">
+        <img class="logo-img" src="./assets/img/logo.png" alt="Logo: Atomic particle">
+        <span class="font-size-24 font-size-xs-18 font-size-sm-18 color-primary">Science Hub</span>
+      </a>
+      <!--Main navigational menu-->
+      <nav>
+        <menu class="d-flex align-items-center justify-content-center d-xs-none d-sm-none">
+          <li class="dropdown">
+            <a class="dropdown-button text-decoration-none d-flex align-items-center justify-content-center active"
+              href="#Biography">
+              <svg class="user-icon mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                  d="M399 384.2c-22.1-38.4-63.6-64.2-111-64.2h-64c-47.4 0-88.9 25.8-111 64.2 35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM512 256c0 141.4-114.6 256-256 256S0 397.4 0 256 114.6 0 256 0s256 114.6 256 256zm-256 16c39.8 0 72-32.2 72-72s-32.2-72-72-72-72 32.2-72 72 32.2 72 72 72z">
+                </path>
+              </svg>
+              <span>Science Grandpas</span>
+            </a>
+            <ul class="dropdown-content">
+              <li class="active"><a class="" href="#Biography">Richard Feynman</a></li>
+              <li class=""><a class="" href="static-html/carl-sagan.html">Carl Sagan</a></li>
+            </ul>
+          </li>
+          <li class="">
+            <a class="d-flex align-items-center justify-content-center" href="./static-html/library.html">
+              <svg class="book-icon mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                  d="M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96zm0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z">
+                </path>
+              </svg>
+              <span>Library</span>
+            </a>
+          </li>
+          <!-- <li class="">
+              <a class="d-flex align-items-center justify-content-center" href="#Podcast">
+                <svg class="podcast-icon mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d='M319.4 372c48.5-31.3 80.6-85.9 80.6-148 0-97.2-78.8-176-176-176S48 126.8 48 224c0 62.1 32.1 116.6 80.6 148 1.2 17.3 4 38 7.2 57.1l.2 1C56 395.8 0 316.5 0 224 0 100.3 100.3 0 224 0s224 100.3 224 224c0 92.5-56 171.9-136 206.1l.2-1.1c3.1-19.2 6-39.8 7.2-57zm-2.3-38.1c-1.6-5.7-3.9-11.1-7-16.2-5.8-9.7-13.5-17-21.9-22.4 19.5-17.6 31.8-43 31.8-71.3 0-53-43-96-96-96s-96 43-96 96c0 28.3 12.3 53.8 31.8 71.3-8.4 5.4-16.1 12.7-21.9 22.4-3.1 5.1-5.4 10.5-7 16.2C99.8 307.5 80 268 80 224c0-79.5 64.5-144 144-144s144 64.5 144 144c0 44-19.8 83.5-50.9 109.9zM224 312c32.9 0 64 8.6 64 43.8 0 33-12.9 104.1-20.6 132.9-5.1 19-24.5 23.4-43.4 23.4s-38.2-4.4-43.4-23.4C172.8 460.2 160 389 160 355.9c0-35.1 31.1-43.8 64-43.8zm0-32c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z'/></svg>
+                <span>Podcast</span>
+              </a>
+            </li> -->
+        </menu>
+        <svg class="mobile-icon-toggle mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path
+            d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z">
+          </path>
+        </svg>
+      </nav>
+    </div>
+    <!--Side internal navigation menu-->
+    <menu class="internal-side-nav position-absolute">
+      <li>
+        <a href="#Biography">
+          <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d='M399 384.2c-22.1-38.4-63.6-64.2-111-64.2h-64c-47.4 0-88.9 25.8-111 64.2 35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM512 256c0 141.4-114.6 256-256 256S0 397.4 0 256 114.6 0 256 0s256 114.6 256 256zm-256 16c39.8 0 72-32.2 72-72s-32.2-72-72-72-72 32.2-72 72 32.2 72 72 72z' />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#Library">
+          <svg class="book-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d='M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96zm0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z' />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#Quote">
+          <svg class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484 512">
+            <path
+              d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z" />
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a href="#Podcast">
+          <svg class="podcast-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d='M319.4 372c48.5-31.3 80.6-85.9 80.6-148 0-97.2-78.8-176-176-176S48 126.8 48 224c0 62.1 32.1 116.6 80.6 148 1.2 17.3 4 38 7.2 57.1l.2 1C56 395.8 0 316.5 0 224 0 100.3 100.3 0 224 0s224 100.3 224 224c0 92.5-56 171.9-136 206.1l.2-1.1c3.1-19.2 6-39.8 7.2-57zm-2.3-38.1c-1.6-5.7-3.9-11.1-7-16.2-5.8-9.7-13.5-17-21.9-22.4 19.5-17.6 31.8-43 31.8-71.3 0-53-43-96-96-96s-96 43-96 96c0 28.3 12.3 53.8 31.8 71.3-8.4 5.4-16.1 12.7-21.9 22.4-3.1 5.1-5.4 10.5-7 16.2C99.8 307.5 80 268 80 224c0-79.5 64.5-144 144-144s144 64.5 144 144c0 44-19.8 83.5-50.9 109.9zM224 312c32.9 0 64 8.6 64 43.8 0 33-12.9 104.1-20.6 132.9-5.1 19-24.5 23.4-43.4 23.4s-38.2-4.4-43.4-23.4C172.8 460.2 160 389 160 355.9c0-35.1 31.1-43.8 64-43.8zm0-32c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z' />
+          </svg>
+        </a>
+      </li>
+    </menu>
+  </header>
+
+  <main>
+    <section id="Biography" class="first-section bg-primary pt-5 pb-5">
+      <article class="d-flex align-items-center justify-content-between flex-xs-column flex-sm-column gap-1 container">
+        <header class="flex-1 color-primary">
+          <h1 class="mb-1 font-size-48 font-extra-bold line-height-heading">Professor Richard Feynman</h1>
+          <p class="mb-1 font-size-18">Richard Phillips Feynman was an American theoretical physicist, known for his
+                work in the path integral formulation of quantum mechanics, the theory of quantum electrodynamics, the
+                physics of the superfluidity of supercooled liquid helium, as well as his work in particle physics for
+              which he proposed the parton model.
+          </p>
+          <button class="button cta-button d-flex justify-content-center align-items-center"
+                onclick="location.href='./static-html/library.html'">
+                <svg class="cart-icon mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                  <path
+                    d="M24 0C10.7 0 0 10.7 0 24s10.7 24 24 24h52.1l60.3 316.5c2.2 11.3 12.1 19.5 23.6 19.5h328c13.3 0 24-10.7 24-24s-10.7-24-24-24H179.9l-9.1-48h317c14.3 0 26.9-9.5 30.8-23.3l54-192C578.3 52.3 563 32 541.8 32H122l-2.4-12.5C117.4 8.2 107.5 0 96 0H24zm152 512c26.5 0 48-21.5 48-48s-21.5-48-48-48-48 21.5-48 48 21.5 48 48 48zm336-48c0-26.5-21.5-48-48-48s-48 21.5-48 48 21.5 48 48 48 48-21.5 48-48z" />
+                </svg>
                 <span>Browse bibliography</span>
-              </button>
-            </div>
-            <div class="flex-1 align-self-stretch overflow-hidden">
-              <img class="w-100 zoom-hover-effect" src="./assets/img/richardfeynman.jpg" alt="Person: Richard Feynman">
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <section id="Library" class="second-section pt-5 pb-5">
-        <div class="container">
-          <h1 class="text-center line-height-heading mb-5 font-size-36 font-extra-bold color-tertiary">Richard Feynman's bibliography</h1>
-          <div class="biblio-container d-flex flex-wrap align-items-start justify-content-between gap-2 margin-auto">
-            <div class="biblio-item">
-              <figure>
-                <img src="assets/img/surely-youre-joking.jpg" alt="Book cover: Surely you're joking Mr Feynman">
-                <figcaption>Surely you're joking Mr. Feynman</figcaption>
-              </figure>
-            </div>
-            <div class="biblio-item">
-              <figure>
-                <img src="assets/img/six-not-so-easy-pieces.webp" alt="Book cover: Six not so easy pieces">
-                <figcaption>Six not so easy pieces</figcaption>
-              </figure>
-            </div>
-            <div class="biblio-item">
-              <figure>
-                <img src="assets/img/the-pleasure-of-finding-things-out.jpg" alt="Book cover: The pleasure of finding things out">
-                <figcaption>The pleasure of finding things out</figcaption>
-              </figure>
-            </div>
-            <div class="biblio-item">
-              <figure>
-                <img src="assets/img/wdycwopt.jpg" alt="Book cover: Why do you care what other people think?">
-                <figcaption>Why do you care what other people think?</figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-  
-      <section id="Quote" class="third-section bg-tertiary">
-        <div class="container">
-          <figure>
-            <blockquote class="font-size-36 font-light font-italic color-tertiary position-relative">
-              <p>I have approximate answers and possible beliefs and different degrees of uncertainty about different things, but I am not absolutely sure of anything and there are many things I don't know anything about..</p>
-            </blockquote>
-            <figcaption><p class="font-bold font-size-24">— Richard Feynman. <cite>Fun to Imagine - BBC interview</cite></p></figcaption>
-          </figure>
-        </div>
-      </section>
-  
-      <section id="Podcast" class="fourth-section pt-5 pb-5">
-        <div class="container">
-          <div class="d-flex justify-content-between align-items-center bg-secondary p-2 pl-5 pr-5 pl-xs-3 pr-xs-3 pl-sm-3 pr-sm-3 border-radius-05 flex-xs-column flex-sm-column">
-            <div class="flex-2">
-              <p class="color-primary font-size-24 font-bold">Listen to my podcast about particle physics</p>
-              <p class="color-primary">Streaming every Thursday of every month forever until the end of time!</p>
-            </div>
-            <div class="flex-1 d-flex align-items-center justify-content-end">
-              <!--The following link takes to a playlist by Reid Gower on Youtube-->
-              <button class="button sign-up-btn" onclick="window.open('https://www.youtube.com/watch?v=cRmbwczTC6E&list=PLP0KwSJB1P7T7Sk0K5538ianH0wvAX7cm', '_blank')">Listen now!</button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+          </button>
+        </header>
+        <figure class="flex-1 align-self-stretch overflow-hidden">
+          <img class="w-100 zoom-hover-effect" src="./assets/img/richardfeynman.jpg" alt="Person: Richard Feynman">
+          <figcaption class="visibility-hidden">Portrait: Richard Feynman</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section id="Library" class="second-section pt-5 pb-5 container">
+      <h2 class="text-center line-height-heading mb-5 font-size-36 font-extra-bold color-tertiary">Richard Feynman's bibliography</h2>
+      <article class="biblio-container d-flex flex-wrap align-items-start justify-content-between gap-2 margin-auto">
+        <figure class="biblio-item">
+          <img src="assets/img/surely-youre-joking.jpg" alt="Book cover: Surely you're joking Mr Feynman">
+          <figcaption>Surely you're joking Mr. Feynman</figcaption>
+        </figure>
+        <figure class="biblio-item">
+          <img src="assets/img/six-not-so-easy-pieces.webp" alt="Book cover: Six not so easy pieces">
+          <figcaption>Six not so easy pieces</figcaption>
+        </figure>
+        <figure class="biblio-item">
+          <img src="assets/img/the-pleasure-of-finding-things-out.jpg" alt="Book cover: The pleasure of finding things out">
+          <figcaption>The pleasure of finding things out</figcaption>
+        </figure>
+        <figure class="biblio-item">
+          <img src="assets/img/wdycwopt.jpg" alt="Book cover: Why do you care what other people think?">
+          <figcaption>Why do you care what other people think?</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section id="Quote" class="third-section bg-tertiary">
+      <article class="container">
+          <blockquote class="font-size-36 font-light font-italic color-tertiary position-relative">
+            <p>I have approximate answers and possible beliefs and different degrees of uncertainty about different
+              things, but I am not absolutely sure of anything and there are many things I don't know anything about..
+            </p>
+          </blockquote>
+          <p class="font-bold font-size-24"><a class="text-decoration-none" href="https://en.wikipedia.org/wiki/Richard_Feynman" rel="author" target="_blank">— Richard Feynman. </a><cite>Fun to Imagine - BBC interview</cite></p>
+        </article>
+    </section>
+
+    <section id="Podcast" class="fourth-section pt-5 pb-5">
+      <article class="d-flex justify-content-between align-items-center bg-secondary p-2 pl-5 pr-5 pl-xs-3 pr-xs-3 pl-sm-3 pr-sm-3 border-radius-05 flex-xs-column flex-sm-column container">
+        <header class="flex-2">
+          <h2 class="color-primary font-size-24 font-bold">Listen to my podcast about particle physics</h2>
+          <p class="color-primary">Streaming every Thursday of every month forever until the end of time!</p>
+        </header>
+        <section class="flex-1 d-flex align-items-center justify-content-end">
+          <!--The following link takes to a playlist by Reid Gower on Youtube-->
+          <button class="button sign-up-btn"
+            onclick="window.open('https://www.youtube.com/watch?v=cRmbwczTC6E&list=PLP0KwSJB1P7T7Sk0K5538ianH0wvAX7cm', '_blank')">Listen
+            now!</button>
+        </section>
+      </article>
+    </section>
+  </main>
+
+  <footer class="bg-primary pt-3 pb-3">
+    <article class="container">
+      <p class="text-center color-primary">Copyright &copy;</p>
+    </article>
+  </footer>
 </body>
-<footer class="bg-primary pt-3 pb-3">
-  <div class="container">
-    <p class="text-center color-primary">Copyright &copy;</p>
-  </div>
-</footer>
 </html>
