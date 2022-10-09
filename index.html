@@ -17,7 +17,7 @@
 <body>
   <header class="bg-primary d-flex align-items-center justify-content-between pt-1 pb-1">
     <div class="container d-flex align-items-center justify-content-between">
-      <a href="#" class="d-flex align-items-center justify-content-center text-decoration-none">
+      <a tabindex="0" href="#" class="d-flex align-items-center justify-content-center text-decoration-none">
         <img class="logo-img" src="./assets/img/logo.png" alt="Logo: Atomic particle">
         <span class="font-size-24 font-size-xs-18 font-size-sm-18 color-primary">Science Hub</span>
       </a>
@@ -66,7 +66,7 @@
     <!--Side internal navigation menu-->
     <menu class="internal-side-nav position-absolute">
       <li>
-        <a href="#Biography">
+        <a aria-label="Jump to Biography section" href="#Biography">
           <svg aria-label="Icon for biography section" class="user-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
             <path
               d='M399 384.2c-22.1-38.4-63.6-64.2-111-64.2h-64c-47.4 0-88.9 25.8-111 64.2 35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM512 256c0 141.4-114.6 256-256 256S0 397.4 0 256 114.6 0 256 0s256 114.6 256 256zm-256 16c39.8 0 72-32.2 72-72s-32.2-72-72-72-72 32.2-72 72 32.2 72 72 72z' />
@@ -74,7 +74,7 @@
         </a>
       </li>
       <li>
-        <a href="#Library">
+        <a aria-label="Jump to Bibliography section" href="#Library">
           <svg aria-label="Icon for bibliography section" class="book-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <path
               d='M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96zm0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z' />
@@ -82,7 +82,7 @@
         </a>
       </li>
       <li>
-        <a href="#Quote">
+        <a aria-label="Jump to Quote section" href="#Quote">
           <svg aria-label="Icon for quote section" class="quote-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 484 512">
             <path
               d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z" />
@@ -90,7 +90,7 @@
         </a>
       </li>
       <li>
-        <a href="#Podcast">
+        <a aria-label="Jump to Podcast section" href="#Podcast">
           <svg aria-label="Icon for podcast section" class="podcast-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <path
               d='M319.4 372c48.5-31.3 80.6-85.9 80.6-148 0-97.2-78.8-176-176-176S48 126.8 48 224c0 62.1 32.1 116.6 80.6 148 1.2 17.3 4 38 7.2 57.1l.2 1C56 395.8 0 316.5 0 224 0 100.3 100.3 0 224 0s224 100.3 224 224c0 92.5-56 171.9-136 206.1l.2-1.1c3.1-19.2 6-39.8 7.2-57zm-2.3-38.1c-1.6-5.7-3.9-11.1-7-16.2-5.8-9.7-13.5-17-21.9-22.4 19.5-17.6 31.8-43 31.8-71.3 0-53-43-96-96-96s-96 43-96 96c0 28.3 12.3 53.8 31.8 71.3-8.4 5.4-16.1 12.7-21.9 22.4-3.1 5.1-5.4 10.5-7 16.2C99.8 307.5 80 268 80 224c0-79.5 64.5-144 144-144s144 64.5 144 144c0 44-19.8 83.5-50.9 109.9zM224 312c32.9 0 64 8.6 64 43.8 0 33-12.9 104.1-20.6 132.9-5.1 19-24.5 23.4-43.4 23.4s-38.2-4.4-43.4-23.4C172.8 460.2 160 389 160 355.9c0-35.1 31.1-43.8 64-43.8zm0-32c-30.9 0-56-25.1-56-56s25.1-56 56-56 56 25.1 56 56-25.1 56-56 56z' />
@@ -110,7 +110,7 @@
                 physics of the superfluidity of supercooled liquid helium, as well as his work in particle physics for
               which he proposed the parton model.
           </p>
-          <button aria-label="Library button" class="button cta-button d-flex justify-content-center align-items-center"
+          <button aria-label="Button to navigate to the Library page" class="button cta-button d-flex justify-content-center align-items-center"
                 onclick="location.href='./static-html/library.html'">
                 <svg aria-label="Cart icon" class="cart-icon mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                   <path
@@ -167,7 +167,7 @@
         </header>
         <section class="flex-1 d-flex align-items-center justify-content-end">
           <!--The following link takes to a playlist by Reid Gower on Youtube-->
-          <button aria-label="Sign up button" class="button sign-up-btn"
+          <button aria-label="Button to navigate to youtube playlist" class="button sign-up-btn"
             onclick="window.open('https://www.youtube.com/watch?v=cRmbwczTC6E&list=PLP0KwSJB1P7T7Sk0K5538ianH0wvAX7cm', '_blank')">Listen
             now!</button>
         </section>
