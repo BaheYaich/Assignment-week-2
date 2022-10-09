@@ -30,7 +30,8 @@ menu {
 
 /* Core root defaults */
 html:focus-within {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    scroll-padding-top: 96px;
 }
 
 /* Core body defaults */
@@ -173,7 +174,10 @@ section.first-section button.cta-button:hover .cart-icon path {
 
 /* Biblio-item component */
 section.second-section .biblio-container {
-    width: 50vw
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between
 }
 section.second-section .biblio-container .biblio-item {
     display: flex;
@@ -181,9 +185,6 @@ section.second-section .biblio-container .biblio-item {
     justify-content: center;
     flex-direction: column;
     flex: 1
-}
-section.second-section .biblio-container .biblio-item  {
-    width: 175px
 }
 section.second-section .biblio-container .biblio-item:hover img {
     z-index: 1;

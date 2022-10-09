@@ -51,6 +51,14 @@
         display: block;
         cursor: pointer
     }
+    section.second-section .biblio-container {
+        width: 100%;
+    }
+    section.second-section .biblio-container .biblio-item {
+        width: 100%;
+        max-width: 100%;
+        align-self: stretch
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -93,6 +101,14 @@
         display: block;
         cursor: pointer
     }
+    section.second-section .biblio-container {
+        width: 100%
+    }
+    section.second-section .biblio-container .biblio-item {
+        width: 100%;
+        max-width: 100%;
+        align-self: stretch
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -101,7 +117,21 @@
         width: 720px
     }
     .mobile-icon-toggle {
-        display: none;
+        display: none
+    }
+    .flex-md-column {
+        flex-direction: column;
+        gap: 2rem
+    }
+    section.first-section > article {
+        flex-direction: column;
+        gap: 2rem
+    }
+    section.second-section .biblio-container {
+        width: 100%
+    }
+    section.second-section .biblio-container .biblio-item {
+        max-width: 100%
     }
 }
 
@@ -110,12 +140,18 @@
     .container {
         width: 960px
     }
+    section.first-section > article {
+        flex-direction: row;
+    }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
     .container {
         width: 1140px
+    }
+    section.second-section .biblio-container {
+        width: 60vw
     }
 }
 
